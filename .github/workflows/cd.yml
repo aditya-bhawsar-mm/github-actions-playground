@@ -11,6 +11,9 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
+        - name: add permission
+          run: chmod +x ./.github/scripts/decrypt_secrets.sh
+        
         - name: Decrypt large secret
           run: ./.github/scripts/decrypt_secrets.sh
           env:
