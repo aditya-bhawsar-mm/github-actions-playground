@@ -1,5 +1,5 @@
 #!/bin/sh
-# Decrypt the file\cell
+# Decrypt the file
 mkdir $HOME/secrets
 # --batch to prevent interactive command
 # --yes to assume "yes" for questions
